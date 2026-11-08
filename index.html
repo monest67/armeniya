@@ -10,6 +10,45 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
+        .menu-category {
+    margin-bottom: 4rem;
+}
+
+.menu-category:last-child {
+    margin-bottom: 0;
+}
+
+.category-title {
+    font-size: 2rem;
+    color: var(--orange);
+    margin-bottom: 2rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 2px solid rgba(214, 163, 74, 0.3);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.category-title i {
+    font-size: 1.5rem;
+    color: var(--gold);
+}
+
+.category-title::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(to right, rgba(214, 163, 74, 0.3), transparent);
+    margin-left: 1rem;
+}
+
+.menu-card-weight {
+    font-size: 0.85rem;
+    color: rgba(244, 235, 221, 0.5);
+    margin-bottom: 0.3rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
         * {
             margin: 0;
             padding: 0;
@@ -1059,106 +1098,384 @@
     </section>
 
     <!-- MENU -->
-    <section class="menu" id="menu">
-        <div class="menu-container">
-            <div class="section-header fade-in">
-                <div class="section-tag">НАШЕ МЕНЮ</div>
-                <h2 class="section-title">Вкус настоящего шашлыка и любимых блюд</h2>
-                <p class="section-subtitle">Все блюда готовятся на живых углях с использованием свежих продуктов</p>
-            </div>
+    <!-- MENU -->
+<section class="menu" id="menu">
+    <div class="menu-container">
+        <div class="section-header fade-in">
+            <div class="section-tag">НАШЕ МЕНЮ</div>
+            <h2 class="section-title">Вкус настоящего шашлыка и любимых блюд</h2>
+            <p class="section-subtitle">Все блюда готовятся на живых углях с использованием свежих продуктов</p>
+        </div>
+
+        <!-- ШАШЛЫКИ ИЗ СВИНИНЫ -->
+        <div class="menu-category fade-in">
+            <h3 class="category-title"><i class="fas fa-fire"></i> Шашлыки из свинины</h3>
             <div class="menu-grid">
-                <div class="menu-card fade-in">
+                <div class="menu-card">
                     <div class="menu-card-image">
-                        <img src="shashlik.jpg" alt="Шашлык из свинины">
+                        <img src="shashlik.jpg" alt="Шашлык из свиной шеи">
                     </div>
                     <div class="menu-card-content">
-                        <h3 class="menu-card-title">Шашлык из свинины</h3>
-                        <p class="menu-card-description">Сочная свинина, маринованная по фирменному рецепту, приготовленная на углях</p>
-                        <div class="menu-card-price">350–380 ₽</div>
+                        <h3 class="menu-card-title">Шея</h3>
+                        <div class="menu-card-weight">250 г</div>
+                        <p class="menu-card-description">Сочная свиная шея, маринованная по фирменному рецепту</p>
+                        <div class="menu-card-price">380 ₽</div>
                     </div>
                 </div>
-                <div class="menu-card fade-in">
-                    <div class="menu-card-image">
-                        <img src="lulyakebab.jpg" alt="Люля-кебаб">
+                <div class="menu-card">
+                    <div class="menu-card-image-placeholder">
+                        <i class="fas fa-bacon"></i>
                     </div>
                     <div class="menu-card-content">
-                        <h3 class="menu-card-title">Люля-кебаб</h3>
-                        <p class="menu-card-description">Нежный фарш из свинины или говядины с ароматными специями</p>
+                        <h3 class="menu-card-title">Вырезка</h3>
+                        <div class="menu-card-weight">250 г</div>
+                        <p class="menu-card-description">Нежная свиная вырезка с аппетитной корочкой</p>
+                        <div class="menu-card-price">350 ₽</div>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-card-image-placeholder">
+                        <i class="fas fa-bacon"></i>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3 class="menu-card-title">Чалагач</h3>
+                        <div class="menu-card-weight">100 г</div>
+                        <p class="menu-card-description">Традиционный армянский шашлык из свинины</p>
+                        <div class="menu-card-price">130 ₽</div>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-card-image-placeholder">
+                        <i class="fas fa-bacon"></i>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3 class="menu-card-title">Ребрышки</h3>
+                        <div class="menu-card-weight">100 г</div>
+                        <p class="menu-card-description">Хрустящие свиные ребрышки на углях</p>
+                        <div class="menu-card-price">110 ₽</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ШАШЛЫКИ ИЗ ГОВЯДИНЫ -->
+        <div class="menu-category fade-in">
+            <h3 class="category-title"><i class="fas fa-fire-flame-curved"></i> Шашлыки из говядины</h3>
+            <div class="menu-grid">
+                <div class="menu-card">
+                    <div class="menu-card-image-placeholder">
+                        <i class="fas fa-drumstick-bite"></i>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3 class="menu-card-title">Вырезка</h3>
+                        <div class="menu-card-weight">250 г</div>
+                        <p class="menu-card-description">Мраморная говядина, приготовленная на живых углях</p>
+                        <div class="menu-card-price">450 ₽</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ШАШЛЫКИ ИЗ КУРИЦЫ -->
+        <div class="menu-category fade-in">
+            <h3 class="category-title"><i class="fas fa-drumstick-bite"></i> Шашлыки из курицы</h3>
+            <div class="menu-grid">
+                <div class="menu-card">
+                    <div class="menu-card-image-placeholder">
+                        <i class="fas fa-drumstick-bite"></i>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3 class="menu-card-title">Филе грудки</h3>
+                        <div class="menu-card-weight">250 г</div>
+                        <p class="menu-card-description">Нежное куриное филе в ароматном маринаде</p>
                         <div class="menu-card-price">300 ₽</div>
                     </div>
                 </div>
-                <div class="menu-card fade-in">
+                <div class="menu-card">
+                    <div class="menu-card-image-placeholder">
+                        <i class="fas fa-drumstick-bite"></i>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3 class="menu-card-title">Крылышки</h3>
+                        <div class="menu-card-weight">4 шт</div>
+                        <p class="menu-card-description">Хрустящие куриные крылышки с золотистой корочкой</p>
+                        <div class="menu-card-price">300 ₽</div>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-card-image-placeholder">
+                        <i class="fas fa-drumstick-bite"></i>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3 class="menu-card-title">Сердечки</h3>
+                        <div class="menu-card-weight">150 г</div>
+                        <p class="menu-card-description">Куриные сердечки, приготовленные на мангале</p>
+                        <div class="menu-card-price">170 ₽</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ЛЮЛЯ-КЕБАБ -->
+        <div class="menu-category fade-in">
+            <h3 class="category-title"><i class="fas fa-fire-burner"></i> Люля-кебаб</h3>
+            <div class="menu-grid">
+                <div class="menu-card">
+                    <div class="menu-card-image">
+                        <img src="food1.jpg" alt="Люля-кебаб">
+                    </div>
+                    <div class="menu-card-content">
+                        <h3 class="menu-card-title">Свиной</h3>
+                        <div class="menu-card-weight">200 г</div>
+                        <p class="menu-card-description">Сочный люля-кебаб из свинины со специями</p>
+                        <div class="menu-card-price">300 ₽</div>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-card-image-placeholder">
+                        <i class="fas fa-fire-burner"></i>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3 class="menu-card-title">Говяжий</h3>
+                        <div class="menu-card-weight">200 г</div>
+                        <p class="menu-card-description">Нежный люля-кебаб из отборной говядины</p>
+                        <div class="menu-card-price">340 ₽</div>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-card-image-placeholder">
+                        <i class="fas fa-fire-burner"></i>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3 class="menu-card-title">Куриный</h3>
+                        <div class="menu-card-weight">200 г</div>
+                        <p class="menu-card-description">Лёгкий люля-кебаб из куриного фарша</p>
+                        <div class="menu-card-price">300 ₽</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ЗАКУСКИ -->
+        <div class="menu-category fade-in">
+            <h3 class="category-title"><i class="fas fa-bowl-food"></i> Закуски</h3>
+            <div class="menu-grid">
+                <div class="menu-card">
                     <div class="menu-card-image-placeholder">
                         <i class="fas fa-utensils"></i>
                     </div>
                     <div class="menu-card-content">
                         <h3 class="menu-card-title">Картофель фри</h3>
-                        <p class="menu-card-description">Хрустящий золотистый картофель, идеальное дополнение к шашлыку</p>
+                        <div class="menu-card-weight">100 г</div>
+                        <p class="menu-card-description">Хрустящий золотистый картофель</p>
                         <div class="menu-card-price">130 ₽</div>
                     </div>
                 </div>
-                <div class="menu-card fade-in">
+                <div class="menu-card">
+                    <div class="menu-card-image-placeholder">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3 class="menu-card-title">Картофель фри дольки Айдахо</h3>
+                        <div class="menu-card-weight">100 г</div>
+                        <p class="menu-card-description">Ароматные дольки с хрустящей корочкой</p>
+                        <div class="menu-card-price">130 ₽</div>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-card-image-placeholder">
+                        <i class="fas fa-cheese"></i>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3 class="menu-card-title">Сыр Брынза</h3>
+                        <div class="menu-card-weight">100 г</div>
+                        <p class="menu-card-description">Традиционный армянский рассольный сыр</p>
+                        <div class="menu-card-price">100 ₽</div>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-card-image-placeholder">
+                        <i class="fas fa-pepper-hot"></i>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3 class="menu-card-title">Перец Цицак</h3>
+                        <div class="menu-card-weight">100 г</div>
+                        <p class="menu-card-description">Острый маринованный перец по-армянски</p>
+                        <div class="menu-card-price">100 ₽</div>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-card-image-placeholder">
+                        <i class="fas fa-jar"></i>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3 class="menu-card-title">Чесночные маринады</h3>
+                        <div class="menu-card-weight">100 г</div>
+                        <p class="menu-card-description">Ароматные маринованные овощи с чесноком</p>
+                        <div class="menu-card-price">100 ₽</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- КОРЕЙСКИЕ САЛАТЫ -->
+        <div class="menu-category fade-in">
+            <h3 class="category-title"><i class="fas fa-leaf"></i> Корейские салаты</h3>
+            <div class="menu-grid">
+                <div class="menu-card">
+                    <div class="menu-card-image-placeholder">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3 class="menu-card-title">Спаржа</h3>
+                        <div class="menu-card-weight">100 г</div>
+                        <p class="menu-card-description">Хрустящая спаржа по-корейски</p>
+                        <div class="menu-card-price">95 ₽</div>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-card-image-placeholder">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3 class="menu-card-title">Фунчоза</h3>
+                        <div class="menu-card-weight">100 г</div>
+                        <p class="menu-card-description">Стеклянная лапша с овощами и специями</p>
+                        <div class="menu-card-price">85 ₽</div>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-card-image-placeholder">
+                        <i class="fas fa-carrot"></i>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3 class="menu-card-title">Морковь по-корейски</h3>
+                        <div class="menu-card-weight">100 г</div>
+                        <p class="menu-card-description">Пикантная морковь с пряными специями</p>
+                        <div class="menu-card-price">50 ₽</div>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-card-image-placeholder">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3 class="menu-card-title">Капуста квашеная</h3>
+                        <div class="menu-card-weight">100 г</div>
+                        <p class="menu-card-description">Хрустящая квашеная капуста с морковью</p>
+                        <div class="menu-card-price">50 ₽</div>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-card-image-placeholder">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3 class="menu-card-title">Шампиньоны</h3>
+                        <div class="menu-card-weight">100 г</div>
+                        <p class="menu-card-description">Маринованные шампиньоны с зеленью</p>
+                        <div class="menu-card-price">140 ₽</div>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-card-image-placeholder">
+                        <i class="fas fa-pepper-hot"></i>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3 class="menu-card-title">Баклажаны с болгарским перцем</h3>
+                        <div class="menu-card-weight">100 г</div>
+                        <p class="menu-card-description">Ароматные баклажаны с перцем и чесноком</p>
+                        <div class="menu-card-price">120 ₽</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- НАПИТКИ -->
+        <div class="menu-category fade-in">
+            <h3 class="category-title"><i class="fas fa-mug-hot"></i> Напитки</h3>
+            <div class="menu-grid">
+                <div class="menu-card">
+                    <div class="menu-card-image-placeholder">
+                        <i class="fas fa-wine-glass"></i>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3 class="menu-card-title">Морс</h3>
+                        <div class="menu-card-weight">0.5 л</div>
+                        <p class="menu-card-description">Домашний ягодный морс</p>
+                        <div class="menu-card-price">100 ₽</div>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-card-image-placeholder">
+                        <i class="fas fa-wine-glass"></i>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3 class="menu-card-title">Морс</h3>
+                        <div class="menu-card-weight">1 л</div>
+                        <p class="menu-card-description">Домашний ягодный морс (большой)</p>
+                        <div class="menu-card-price">180 ₽</div>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-card-image-placeholder">
+                        <i class="fas fa-mug-hot"></i>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3 class="menu-card-title">Чай чёрный / зелёный</h3>
+                        <div class="menu-card-weight">чашка</div>
+                        <p class="menu-card-description">Ароматный свежеезаваренный чай</p>
+                        <div class="menu-card-price">30 ₽</div>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-card-image-placeholder">
+                        <i class="fas fa-coffee"></i>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3 class="menu-card-title">Кофе 3 в 1 / чёрный</h3>
+                        <div class="menu-card-weight">чашка</div>
+                        <p class="menu-card-description">Растворимый или чёрный кофе</p>
+                        <div class="menu-card-price">50 ₽</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- СОУСЫ И ХЛЕБ -->
+        <div class="menu-category fade-in">
+            <h3 class="category-title"><i class="fas fa-bread-slice"></i> Соусы и хлеб</h3>
+            <div class="menu-grid">
+                <div class="menu-card">
+                    <div class="menu-card-image-placeholder">
+                        <i class="fas fa-jar"></i>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3 class="menu-card-title">Соус томатный</h3>
+                        <div class="menu-card-weight">50 г</div>
+                        <p class="menu-card-description">Фирменный томатный соус к шашлыку</p>
+                        <div class="menu-card-price">50 ₽</div>
+                    </div>
+                </div>
+                <div class="menu-card">
                     <div class="menu-card-image-placeholder">
                         <i class="fas fa-bread-slice"></i>
                     </div>
                     <div class="menu-card-content">
                         <h3 class="menu-card-title">Лаваш армянский</h3>
-                        <p class="menu-card-description">Тонкий традиционный лаваш, свежий и ароматный</p>
+                        <div class="menu-card-weight">1 шт</div>
+                        <p class="menu-card-description">Тонкий традиционный армянский лаваш</p>
                         <div class="menu-card-price">60 ₽</div>
                     </div>
                 </div>
-                <div class="menu-card fade-in">
-                    <div class="menu-card-image-placeholder">
-                        <i class="fas fa-drumstick-bite"></i>
-                    </div>
-                    <div class="menu-card-content">
-                        <h3 class="menu-card-title">Шашлык из курицы</h3>
-                        <p class="menu-card-description">Нежное куриное филе, крылышки или сердечки на выбор</p>
-                        <div class="menu-card-price">Уточнить</div>
-                    </div>
-                </div>
-                <div class="menu-card fade-in">
-                    <div class="menu-card-image-placeholder">
-                        <i class="fas fa-pepper-hot"></i>
-                    </div>
-                    <div class="menu-card-content">
-                        <h3 class="menu-card-title">Овощи на мангале</h3>
-                        <p class="menu-card-description">Свежие овощи, приготовленные на углях с ароматными специями</p>
-                        <div class="menu-card-price">Уточнить</div>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-cta fade-in">
-                <a href="tel:+79501454551" class="btn-primary">ПОЗВОНИТЬ И ЗАКАЗАТЬ</a>
             </div>
         </div>
-    </section>
 
-    <!-- GALLERY -->
-    <section class="gallery" id="gallery">
-        <div class="section-header fade-in">
-            <div class="section-tag">НАША АТМОСФЕРА</div>
-            <h2 class="section-title">Посмотрите, как выглядит вкус настоящего гостеприимства</h2>
-            <p class="section-subtitle">Реальные фотографии нашего заведения и блюд</p>
+        <div class="menu-cta fade-in">
+            <a href="tel:+79501454551" class="btn-primary">ПОЗВОНИТЬ И ЗАКАЗАТЬ</a>
         </div>
-        <div class="gallery-grid">
-            <div class="gallery-item fade-in" onclick="openLightbox('fasad.jpg')">
-                <img src="fasad.jpg" alt="Фасад шашлычной АРМЕНИЯ" loading="lazy">
-            </div>
-            <div class="gallery-item fade-in" onclick="openLightbox('food1.jpg')">
-                <img src="food1.jpg" alt="Шашлык на углях" loading="lazy">
-            </div>
-            <div class="gallery-item fade-in" onclick="openLightbox('interior.jpg')">
-                <img src="interior.jpg" alt="Интерьер заведения" loading="lazy">
-            </div>
-            <div class="gallery-item fade-in" onclick="openLightbox('food2.jpg')">
-                <img src="gallery1.jpg" alt="Аппетитные блюда" loading="lazy">
-            </div>
-            <div class="gallery-item fade-in" onclick="openLightbox('gallery2.jpg')">
-                <img src="gallery2.jpg" alt="Атмосфера шашлычной" loading="lazy">
-            </div>
-        </div>
-    </section>
+    </div>
+</section>
 
     <!-- CONTACTS -->
     <section class="contacts" id="contacts">
